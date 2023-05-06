@@ -1,0 +1,41 @@
+---
+title: "Common Configuration Options"
+---
+
+## Set Container Port[](#set-container-port "Direct link to heading")
+
+```
+container:
+  port: 3000
+
+```
+
+## Set Container Start Command[](#set-container-start-command "Direct link to heading")
+
+```
+container:
+  command: npm start
+
+```
+
+## Private Application[](#private-application "Direct link to heading")
+
+This configuration only applies to `web` applications.
+
+```
+ingress:
+  enabled: false
+
+```
+
+## Custom Domain[](#custom-domain "Direct link to heading")
+
+This configuration only applies to `web` applications.
+
+```
+ingress:
+  custom_domain: true
+  hosts:
+    - my-app.example.com
+
+```
