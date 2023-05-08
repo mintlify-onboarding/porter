@@ -1,5 +1,6 @@
 ---
 title: "Provisioning Infrastructure"
+sidebarTitle: "Overview"
 ---
 
 Porter provisions and manages the underlying infrastructure in your own cloud. During project creation, Porter will prompt you to provision resources in one of the three cloud providers: Amazon Web Services (AWS), Google Cloud Platform (GCP), and Digital Ocean.
@@ -8,9 +9,14 @@ Porter provisions and manages the underlying infrastructure in your own cloud. D
 
 For step by step instructions on how to provision infrastructure in each cloud provider, see the links below.
 
-* [Provisioning on AWS](/getting-started/provisioning-on-aws)
-* [Provisioning on Google Cloud](/getting-started/provisioning-on-gcp)
-* [Provisioning on Digital Ocean](/getting-started/provisioning-on-do)
+<CardGroup cols={3}>
+  <Card title="Provisioning on AWS" icon="aws" href="/getting-started/provisioning-on-aws">
+  </Card>
+  <Card title="Provisioning on Google Cloud" icon="google" href="/getting-started/provisioning-on-gcp">
+  </Card>
+  <Card title="Provisioning on Digital Ocean" icon="digital-ocean" href="/getting-started/provisioning-on-do">
+  </Card>
+</CardGroup>
 
 As mentioned in the [previous section](/getting-started/linking-application-source), Porter provisions a Kubernetes cluster and an image registry in your cloud provider. It is not necessary to know much about the provisioned resources to use Porter, other than a few basic concepts. For those looking for a brief introduction to Kubernetes, we cover these basic concepts in [Kubernetes 101](/other/kubernetes-101).
 

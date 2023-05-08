@@ -40,7 +40,8 @@
             {
                 "group": "Provisioning Infastructure",
                 "pages": [
-                    "getting-started/provisioning-infastructure",
+                    "getting-started/provisioning-infrastructure",
+                    "getting-started/provisioning-on-aws",
                     "getting-started/provisioning-on-gcp",
                     "getting-started/provisioning-do"
                 ]
@@ -101,122 +102,13 @@
                     "deploying-applications/runtime-configuration-options/web-applications",
                     "deploying-applications/runtime-configuration-options/worker-applications"
                 ]
-            },
-            {
-                "group": "Managing Applications",
-                "pages": [
-                    "managing-applications/application-metrics",
-                    "managing-applications/logging-options",
-                    {
-                        "group": "Alerting",
-                        "pages": [
-                            "managing-applications/alerting",
-                            "managing-applications/alerting/slack-notifications",
-                            "managing-applications/advanced-monitoring"
-                        ]
-                    },
-                    "managing-applications/network-configuration-options",
-                    "managing-applications/application-troublshooting",
-                    "managing-applications/version-upgrades"
-                ]
-            },
-            {
-                "group": "Deploying Addons",
-                "pages": [
-                    "deploying-addons/overview",
-                    "deploying-addons/postgresql",
-                    "deploying-addons/redis",
-                    "deploying-addons/mongodb",
-                    "deploying-addons/tailscale",
-                    "deploying-addons/wallarm",
-                    "deploying-addons/datadog",
-                    "deploying-addons/strapi"
-                ]
-            },
-            {
-                "group": "Running Jobs And Cron Jobs",
-                "pages": [
-                    "running-jobs/overview",
-                    "running-jobs/deploying-jobs",
-                    "running-jobs/advanced-options"
-                ]
-            },
-            {
-                "group": "Command Line Interface (CLI)",
-                "pages": [
-                    "cli/installation",
-                    "cli/basic-usage",
-                    "cli/remote-shell-access",
-                    {
-                        "group": "Command Reference",
-                        "pages": [
-                            "cli/command-reference",
-                            "cli/command-reference/porter-auth",
-                            "cli/command-reference/porter-cluster",
-                            "cli/command-reference/porter-config",
-                            "cli/command-reference/porter-connect",
-                            "cli/command-reference/porter-create",
-                            "cli/command-reference/porter-delete",
-                            "cli/command-reference/porter-get",
-                            "cli/command-reference/porter-helm",
-                            "cli/command-reference/porter-job",
-                            "cli/command-reference/porter-kubectl",
-                            "cli/command-reference/poter-list",
-                            "cli/command-reference/porter-logs",
-                            "cli/command-reference/porter-project",
-                            "cli/command-reference/porter-registry",
-                            "cli/command-reference/porter-run",
-                            "cli/command-reference/porter-stack",
-                            "cli/command-reference/porter-update"
-                        ]
-                    },
-                    "cli/heroku-cli-comparison"
-                ]
-            },
-            {
-                "group": "Language-Specific Guides",
-                "pages": [
-                    "language-guides/node-js",
-                    "language-guides/python",
-                    "language-guides/go"
-                ]
-            },
-            {
-                "group": "Preview Environments",
-                "pages": [
-                    "preview-environments/overview",
-                    "preview-environments/concepts",
-                    "preview-environments/setup",
-                    "preview-environments/porter-yaml-reference",
-                    {
-                        "group": "Drivers",
-                        "pages": [
-                            "preview-environments/drivers",
-                            "preview-environments/drivers/deploy",
-                            "preview-enviornments/drivers/build-image",
-                            "preview-enviornments/drivers/push-image",
-                            "preview-enviornments/drivers/update-config",
-                            "preview-enviornments/drivers/random-string",
-                            "preview-enviornments/drivers/env-group",
-                            "preview-enviornments/drivers/os-env"
-                        ]
-                    },
-                    {
-                        "group": "Examples",
-                        "pages": [
-                            "preview-environments/examples",
-                            "preview-environments/examples/basic-web-application",
-                            "preview-environments/examples/web-and-database"
-                        ]
-                    }
-                ]
             }
         ]
       }
     ],
     "footerSocials":
       {
-          "twitter": "",
-          "linkedin": ""
+          "twitter": "https://twitter.com/getporterdev",
+          "discord": "https://discord.com/invite/FaaFjb6DXA"
       }
   }
