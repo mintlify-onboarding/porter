@@ -43,7 +43,7 @@
                     "getting-started/provisioning-infrastructure",
                     "getting-started/provisioning-on-aws",
                     "getting-started/provisioning-on-gcp",
-                    "getting-started/provisioning-do"
+                    "getting-started/provisioning-on-do"
                 ]
             },
             "getting-started/deploying-first-application",
@@ -58,8 +58,8 @@
                 "group": "Deploying from a Github Repository",
                 "pages": [
                     "deploying-applications/deploying-from-github",
-                    "deplyoing-applications/deploying-from-github/adding-updating-gh-app",
-                    "deploying-applications/deplyoing-from-github/selecting-application-and-build-method",
+                    "deploying-applications/deploying-from-github/adding-updating-gh-app",
+                    "deploying-applications/deploying-from-github/selecting-application-and-build-method",
                     "deploying-applications/deploying-from-github/customizing-github-workflow"
                 ]
             },
@@ -86,9 +86,9 @@
                 "pages": [
                     "deploying-applications/https-and-domains",
                     "deploying-applications/https-and-domains/porter-domains",
-                    "deplyoing-applications/https-and-domains/custom-domains",
+                    "deploying-applications/https-and-domains/custom-domains",
                     "deploying-applications/https-and-domains/wildcard-domains",
-                    "deplyoing-applications/https-and-domains/ssl-certificates"
+                    "deploying-applications/https-and-domains/ssl-certificates"
                 ]
               },
             "deploying-applications/using-other-ci-tools",

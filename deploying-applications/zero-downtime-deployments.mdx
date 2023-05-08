@@ -15,9 +15,7 @@ Health checks are endpoints that indicate if an application is healthy and ready
 
 As indicated in the screenshot above, it is recommended that you expose two endpoints on your application: `/livez` and `/readyz`. If the `/livez` endpoint fails, the application will be restarted, while if the `/readyz` endpoint fails, the application will stop receiving traffic. These endpoints can sometimes be combined into a single `/healthz` endpoint.
 
-##### info
-
-Readiness probes should be used in conjunction with graceful shutdown behavior to control exactly when applications stop receiving traffic. See the [graceful shutdown](#graceful-shutdown) section for more information.
+<Info>Readiness probes should be used in conjunction with graceful shutdown behavior to control exactly when applications stop receiving traffic. See the [graceful shutdown](#graceful-shutdown) section for more information.</Info>
 
 The failure threshold and repeat interval control exactly when a health check endpoint is considered as "failed". The repeat interval refers to the number of seconds between successive requests to the endpoint, while the failure threshold refers to the number of times that endpoint can return a `500`\-level response before it's considered "failed". Thus, the maximum amount of time the endpoint can return `500`\-level responses before the application is failing is _failure\_threshold \* repeat\_interval_.
 

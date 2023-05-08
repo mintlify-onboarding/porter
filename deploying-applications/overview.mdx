@@ -1,15 +1,26 @@
 ---
 title: "Deploying Applications - Overview"
+sidebarTitle: "Overview"
 ---
 
 ## Deployment Methods[](#deployment-methods "Direct link to heading")
 
 Porter supports multiple deployment methods for different types of applications. These deployment methods are as follows:
 
-* [Deploying from a Github Repository](/deploying-applications/deploying-from-github) \- Porter will automatically update your applications on a push to a specific branch in a Github repository.
-* [Deploying from a Docker Registry](/deploying-applications/deploying-from-docker-registry) \- you can create and update applications from an existing Docker registry that you manage.
-* [Deploying from the CLI](/deploying-applications/deploying-from-cli) \- you can create and update applications directly from the CLI.
-* [Using your own CI Tool](/deploying-applications/using-other-ci-tools) \- you can configure your CI tools, such as CircleCI, Travis CI, or Gitlab, to deploy to Porter.
+<CardGroup cols={2}>
+  <Card title="Deploying from a Github Repository" icon="github" href="/deploying-applications/deploying-from-github">
+  Porter will automatically update your applications on a push to a specific branch in a Github repository.
+  </Card>
+  <Card title="Deploying from a Docker Registry" icon="docker" href="/deploying-applications/deploying-from-docker-registry">
+  you can create and update applications from an existing Docker registry that you manage.
+  </Card>
+  <Card title="Deploying from the CLI" icon="square-terminal" href="/deploying-applications/deploying-from-cli">
+  you can create and update applications directly from the CLI.
+  </Card>
+  <Card title="Using your own CI Tool" icon="puzzle" href="/deploying-applications/using-other-ci-tools">
+  you can configure your CI tools, such as CircleCI, Travis CI, or Gitlab, to deploy to Porter.
+  </Card>
+</CardGroup>
 
 **Which Deployment Method Should I Use?**
 

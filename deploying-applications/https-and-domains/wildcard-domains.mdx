@@ -9,17 +9,13 @@ There are two options for setting up wildcard domains:
 * [Separate certificate per domain](#separate-certificates-per-domain): in this setup, a single wildcard DNS record is used, but each domain creates a new certificate. This is the recommended setup if you are not frequently creating subdomains.
 * [Wildcard certificate](#wildcard-certificates): all domains share a single wildcard certificate. This is recommended if you're managing a large number of domains, or you'd like to capture a set of wildcard domains for a single application.
 
-##### info
-
-Note that wildcard certificates are only supported on Digital Ocean at the moment, but it is possible to set them up manually through AWS/GCP. If you'd like instructions for manual setup, please reach out on Discord or over email.
+<Info>Note that wildcard certificates are only supported on Digital Ocean at the moment, but it is possible to set them up manually through AWS/GCP. If you'd like instructions for manual setup, please reach out on Discord or over email.</Info>
 
 ## Separate Certificates per Domain[](#separate-certificates-per-domain "Direct link to heading")
 
 To set up the wildcard DNS record, create either an `A` record or `CNAME` record for the wildcard domain. If you're on GCP/Digital Ocean, create an `A` record; if you're on AWS, create a `CNAME` record. Make sure DNS has propagated before moving to the next step.
 
-##### info
-
-It might take up to 30 minutes for DNS records to fully propagate. Please wait before deploying your applications until the DNS propagation is complete. You can check this using tools like [dnschecker.org](https://dnschecker.org) or running `nslookup <your-domain>`.
+<Info>It might take up to 30 minutes for DNS records to fully propagate. Please wait before deploying your applications until the DNS propagation is complete. You can check this using tools like [dnschecker.org](https://dnschecker.org) or running `nslookup <your-domain>`.</Info>
 
 Once you've created this record, simply deploy an application that falls under that wildcard domain:
 
@@ -29,10 +25,10 @@ Once you've created this record, simply deploy an application that falls under t
 
 ### Digital Ocean[](#digital-ocean "Direct link to heading")
 
-##### Prerequisites
-
-* From your DNS provider, point the nameservers of your domain to Digital Ocean. You can find provider specific ways to do this [here](https://www.digitalocean.com/community/tutorials/how-to-point-to-digitalocean-nameservers-from-common-domain-registrars).
-* Create a personal access token on Digital Ocean. Visit this [direct link](https://cloud.digitalocean.com/account/api/tokens/new) to create a token. If this doesn't work, see this [documentation](https://docs.digitalocean.com/reference/api/create-personal-access-token/).
+<Card title="Prerequisites">
+  * From your DNS provider, point the nameservers of your domain to Digital Ocean. You can find provider specific ways to do this [here](https://www.digitalocean.com/community/tutorials/how-to-point-to-digitalocean-nameservers-from-common-domain-registrars).
+  * Create a personal access token on Digital Ocean. Visit this [direct link](https://cloud.digitalocean.com/account/api/tokens/new) to create a token. If this doesn't work, see this [documentation](https://docs.digitalocean.com/reference/api/create-personal-access-token/).
+</Card>
 
 1. Once the nameservers of your domain have been swapped out, [create an A record for your wildcard domain](https://docs.digitalocean.com/products/networking/dns/how-to/manage-records/#a-records). Make sure that the A record you create points at the load balancer attached to the Kubernetes cluster provisioned through Porter.
 2. Once DNS propagation is complete, deploy the **HTTPS Issuer** template to the `cert-manager` namespace from the Porter Dashboard.

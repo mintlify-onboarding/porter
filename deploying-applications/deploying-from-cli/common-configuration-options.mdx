@@ -4,7 +4,7 @@ title: "Common Configuration Options"
 
 ## Set Container Port[](#set-container-port "Direct link to heading")
 
-```
+```yaml
 container:
   port: 3000
 
@@ -12,7 +12,7 @@ container:
 
 ## Set Container Start Command[](#set-container-start-command "Direct link to heading")
 
-```
+```yaml
 container:
   command: npm start
 
@@ -22,7 +22,7 @@ container:
 
 This configuration only applies to `web` applications.
 
-```
+```yaml
 ingress:
   enabled: false
 
@@ -32,7 +32,7 @@ ingress:
 
 This configuration only applies to `web` applications.
 
-```
+```bash
 ingress:
   custom_domain: true
   hosts:

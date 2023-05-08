@@ -24,9 +24,7 @@ The port that your application exposes for receiving traffic.
 
 This option allows you to expose a webhook for your application which can update the container image that's running. This is useful for programmatically redeploying a Docker image from an automated script.
 
-##### info
-
-For more information about webhooks and auto-deployment, see the [docs on programmatic Docker deployments](/deploying-applications/deploying-from-docker-registry/deploying#programmatic-updates)
+<Info>For more information about webhooks and auto-deployment, see the [docs on programmatic Docker deployments](/deploying-applications/deploying-from-docker-registry/deploying#programmatic-updates)</Info>
 
 ### Network Settings[](#network-settings "Direct link to heading")
 
@@ -75,7 +73,7 @@ In this section, you can set environment variables for your application. You can
 
 The ingress custom annotations overwrite the default annotations that Porter adds to the ingress. The following annotations are added by default:
 
-```
+```yaml
 kubernetes.io/ingress.class: "nginx"
 nginx.ingress.kubernetes.io/proxy-body-size: 50m
 nginx.ingress.kubernetes.io/proxy-send-timeout: "60"

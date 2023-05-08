@@ -8,9 +8,7 @@ Porter uses [cert-manager](https://cert-manager.io/) and [Let's Encrypt](https:/
 
 When you create a cluster on Porter, the email address of the cluster creator is registered with the Let's Encrypt ACME server. This email address is used to identify the owner of a certificate, and is used to send you email updates on certificate expiry. Note that is is **not expected** that you receive certificate expiry emails, since the certificates should be automatically renewed starting 30 days before they expire, as recommended by Let's Encrypt best practices.
 
-##### info
-
-If you receive an expiry email, you will usually have several weeks before the certificate expires. See the [troubleshooting section](#troubleshooting) for some tips on how to resolve these issues.
+<Info>If you receive an expiry email, you will usually have several weeks before the certificate expires. See the [troubleshooting section](#troubleshooting) for some tips on how to resolve these issues.</Info>
 
 Certificates issued by Let's Encrypt's ACME servers are usually trusted by client's computers by default. Thus, if there is a certificate trust issue, it is usually because a default certificate is returned before the certificate has been received from Let's Encrypt. You will initially see the certificate listed as `Kubernetes Ingress Controller Fake Certificate` \-- this is expected behavior, and should resolve within a few minutes. If you are waiting more than 30 minutes for a certificate to be issued, see the [troubleshooting section](#troubleshooting) below.
 

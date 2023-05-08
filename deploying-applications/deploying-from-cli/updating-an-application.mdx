@@ -6,7 +6,7 @@ title: "Updating an Application from the CLI"
 
 You can update an existing application that was deployed from either the dashboard or the CLI. The root command for updating an application is:
 
-```
+```yaml
 porter update --app [app-name]
 
 ```
@@ -15,7 +15,7 @@ Where `app-name` is the name of a web, worker, or job application on the Porter 
 
 As with the [porter create command](/deploying-applications/deploying-from-cli/creating-an-application), you can update the configuration that an application uses by passing in the `--values` flag, which should pass the filepath to a `values.yaml` file. **Note that this command merges the `values.yaml` file with your existing configuration, so you should only specify options that you would like to modify**. For example, the following `values.yaml` file:
 
-```
+```yaml
 container:
   port: 8080
 
@@ -23,16 +23,14 @@ container:
 
 Would only update the container port to `8080`, while keeping your existing configuration, after running the command:
 
-```
+```yaml
 porter update --app --values ./values.yaml
 
 ```
 
 Go to the [common configuration options](/deploying-applications/deploying-from-cli/common-configuration-options) section to view `values.yaml` files for common use-cases.
 
-##### info
-
-If you have experience with Kubernetes/Helm, you can also view all possible configuration options in the `values.yaml` files of the respective applications: [web](https://github.com/porter-dev/porter-charts/blob/master/applications/web/values.yaml), [worker](https://github.com/porter-dev/porter-charts/blob/master/applications/worker/values.yaml), and [job](https://github.com/porter-dev/porter-charts/blob/master/applications/job/values.yaml).
+<Info>If you have experience with Kubernetes/Helm, you can also view all possible configuration options in the `values.yaml` files of the respective applications: [web](https://github.com/porter-dev/porter-charts/blob/master/applications/web/values.yaml), [worker](https://github.com/porter-dev/porter-charts/blob/master/applications/worker/values.yaml), and [job](https://github.com/porter-dev/porter-charts/blob/master/applications/job/values.yaml).</Info>
 
 ## Building from Local Files[](#building-from-local-files "Direct link to heading")
 
@@ -58,7 +56,7 @@ porter update config --app [app-name] --values [values-file]
 
 For example, to update the app `web-test`, and to programmatically set the environment variables for that application, you can create a file called `web-test-values.yaml` with the following structure:
 
-```
+```yaml
 container:
   env:
     normal:

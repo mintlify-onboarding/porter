@@ -4,9 +4,7 @@ title: "Environment Groups"
 
 An **environment group** (or **env group** for short) is a set of environment variables that are meant to be reused across multiple applications. For example, if all web services require a shared set of API and database keys, this could form a `web-service` environment group with all of those keys as a shared configuration. In this guide, we will explain how to create and use environment groups.
 
-##### info
-
-Environment groups are stored in **your own cluster** as a Kubernetes [Config Map](https://kubernetes.io/docs/concepts/configuration/configmap/) or a Kubernetes [Secret](https://kubernetes.io/docs/concepts/configuration/secret). The data will be visible to any users or services with access to your cluster, such as Porter.
+<Info>Environment groups are stored in **your own cluster** as a Kubernetes [Config Map](https://kubernetes.io/docs/concepts/configuration/configmap/) or a Kubernetes [Secret](https://kubernetes.io/docs/concepts/configuration/secret). The data will be visible to any users or services with access to your cluster, such as Porter.</Info>
 
 ## Creating and Using Environment Groups[](#creating-and-using-environment-groups "Direct link to heading")
 
@@ -34,9 +32,7 @@ When you launch a new service, and you select "Load from Env Group" in the "Envi
 
 ![Sensitive value](https://imagedelivery.net/l4LYM_vOYKe7O1NCT_Nc_g/f6243034-198b-4a5e-f650-58529e208a00/large "Screen Shot 2021-04-27 at 9.33.04 AM.png")
 
-##### info
-
-**Note:** the sensitive value above is not written to the dashboard -- the hidden value is simply a dummy string.
+<Info>**Note:** the sensitive value above is not written to the dashboard -- the hidden value is simply a dummy string.</Info>
 
 ## Syncing Environment Groups to Applications[](#syncing-environment-groups-to-applications "Direct link to heading")
 
@@ -68,6 +64,4 @@ All env group variables are stored **in your own cluster**, and not on Porter's 
 
 There is no further encryption beyond what is offered by the managed Kubernetes providers. Some providers will encrypt all secret data in the control plane at rest (in `etcd`), others will store it as base64-encoded data. While you don't have access to this control plane or the `etcd` instance, users with access to your cluster could view the secrets using `kubectl get secrets -o yaml`, for example.
 
-##### info
-
-For secret encryption beyond what is offered in the managed Kubernetes providers, you may want to use a solution such as [sealed-secrets](https://github.com/bitnami-labs/sealed-secrets).
+<Info>For secret encryption beyond what is offered in the managed Kubernetes providers, you may want to use a solution such as [sealed-secrets](https://github.com/bitnami-labs/sealed-secrets).</Info>
