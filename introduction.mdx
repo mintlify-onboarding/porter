@@ -1,6 +1,6 @@
 ---
-title: "Introduction"
-sidebarTitle: "Overview"
+title: 'Introduction'
+description: 'Welcome to the Porter documentation'
 ---
 
 ## What is Porter?
@@ -9,33 +9,26 @@ Porter is a platform as a service (PaaS) that runs in your own cloud. It brings 
 
 Get started with the documentation:
 
-<CardGroup cols={2}>
-  <Card title="Getting Started" icon="play" href="/getting-started/overview">
-    Getting started with your first project on Porter
-  </Card>
-  <Card
-    title="Deploying Applications"
-    icon="browser"
-    href="/deploying-applications/overview"
-  >
-    Deploy from a Github repository, Docker registry, or write your own
-    workflow.
-  </Card>
-  <Card
-    title="Managing Applications"
-    icon="bars-progress"
-    href="/managing-applications/application-metrics"
-  >
-    View application metrics, logs, and troubleshoot your deployments.
-  </Card>
-  <Card
-    title="Deploying Addons"
-    icon="puzzle"
-    href="/deploying-addons/overview"
-  >
-    Deploy Postgres, Redis, Mongo and more on Porter.
-  </Card>
-</CardGroup>
+<Card title="Getting Started" icon="play" href="/getting-started/overview">
+  Getting started with your first project on Porter
+</Card>
+<Card
+  title="Deploying Applications"
+  icon="browser"
+  href="/deploying-applications/overview"
+>
+  Deploy from a Github repository, Docker registry, or write your own workflow
+</Card>
+<Card
+  title="Managing Applications"
+  icon="bars-progress"
+  href="/managing-applications/application-metrics"
+>
+  View application metrics, logs, and troubleshoot your deployments
+</Card>
+<Card title="Deploying Addons" icon="puzzle" href="/deploying-addons/overview">
+  Deploy Postgres, Redis, Mongo and more on Porter
+</Card>
 
 ## Why Porter?
 
@@ -53,6 +46,6 @@ Under the hood, Porter runs on top of Kubernetes. Porter provisions and manages 
 
 Some find it daunting that Porter runs on top of Kubernetes. For teams who don't know Kubernetes, **Kubernetes is an incidental implementation detail**. You don't need to know anything about Kubernetes other than a few basic concepts to use Porter. It just _happens_ that Kubernetes is the best underlying layer to deliver the PaaS experience on. In fact, most PaaS's actually run on top of Kubernetes although that detail is hidden away from the end user. Many of our users who have migrated from another PaaS experience no learning curve.
 
-## Internal Deployment Platform[](#internal-deployment-platform "Direct link to heading")
+## Internal Deployment Platform[](#internal-deployment-platform 'Direct link to heading')
 
 If your team is already familiar with Kubernetes, Porter can be an internal deployment platform that simplifies your existing operations. If you are looking to simplify your existing Kubernetes setup for your team, [contact us](mailto:contact@porter.run) for a demo.

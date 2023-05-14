@@ -8,28 +8,37 @@
     "colors": {
       "primary": "#5D5DFF",
       "light": "#9494FF",
-      "dark": "#2727C1"
+      "dark": "#5D5DFF",
+      "anchors": {
+        "from": "#5D5DFF",
+        "to": "#9494FF"
+      }
     },
     "topbarCtaButton": {
       "name": "Dashboard",
-      "url": "https://dashboard.getporter.dev/"
+      "url": "https://dashboard.getporter.dev"
     },
     "topbarLinks": [
       {
-        "name": "Blog",
-        "url": "https://blog.porter.run/"
+        "name": "Book a Demo",
+        "url": "https://porter.run/?demo=true"
       }
     ],
     "anchors": [
+      {
+        "name": "Get Starter",
+        "icon": "play",
+        "url": "https://dashboard.getporter.dev"
+      },
       {
         "name": "Github",
         "icon": "github",
         "url": "https://github.com/porter-dev/porter"
       },
       {
-        "name": "Book a Demo",
-        "icon": "headset",
-        "url": "https://porter.run/?demo=true"
+        "name": "Community",
+        "icon": "discord",
+        "url": "https://discord.gg/FaaFjb6DXA"
       }
     ],
     "modeToggle": {
@@ -37,7 +46,7 @@
     },
     "navigation": [
       {
-        "group": "Introduction",
+        "group": "Home",
         "pages": ["introduction"]
       },
       {
@@ -63,7 +72,7 @@
         "pages": [
             "deploying-applications/overview",
             {
-                "group": "Deploying from a Github Repository",
+                "group": "Deploying from a Github Repo",
                 "pages": [
                     "deploying-applications/deploying-from-github",
                     "deploying-applications/deploying-from-github/adding-updating-gh-app",
@@ -118,5 +127,8 @@
       {
           "twitter": "https://twitter.com/getporterdev",
           "discord": "https://discord.com/invite/FaaFjb6DXA"
+      },
+      "integrations": {
+        "intercom": "gq56g49i"
       }
   }
